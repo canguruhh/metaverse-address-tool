@@ -19,7 +19,7 @@ function convertToEvmAddress(substrateAddress: string) {
   return '0x' + Buffer.from(addressBytes.subarray(0, 20)).toString('hex')
 }
 
-function convertSs58AddressPrefix(ss58Address: string, prefix) {
+function convertSs58AddressPrefix(ss58Address: string, prefix: number) {
 
   const addressBytes = decodeAddress(ss58Address)
   return encodeAddress(addressBytes, prefix)
