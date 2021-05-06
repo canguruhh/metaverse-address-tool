@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { encodeAddress, decodeAddress, blake2AsHex } from '@polkadot/util-crypto'
 import { Command } from 'commander'
 
